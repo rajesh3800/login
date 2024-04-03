@@ -1,0 +1,11 @@
+{%extends "base.html"%}
+{%block body%}
+<h1>This is my page</h1>
+{%if ur.username|length%}
+<h1>Hello {{ur.username}}</h1>
+<h2>Your password is {{ur.password}}</h2>
+<h3>Your mailid is {{ur.email}}</h3>
+{%else%}
+<a href="login"><h1>Please Login</h1></a>
+{%endif%}
+{%endblock body%}
